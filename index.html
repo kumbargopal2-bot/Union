@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0,
+maximum-scale=1.0,
+user-scalable=no">
+
+<title>My Game</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Rotate Screen -->
+
+<div id="rotateScreen">
+
+<h1>📱 Rotate Your Phone</h1>
+
+<p>Please play in Landscape Mode</p>
+
+</div>
+
+<!-- Intro -->
+
+<section id="introScreen" class="screen">
+
+<video
+id="introVideo"
+muted
+playsinline
+webkit-playsinline
+preload="auto">
+
+<source src="intro.mp4" type="video/mp4">
+
+</video>
+
+</section>
+
+<!-- Loading -->
+
+<section id="loadingScreen" class="screen">
+
+<img
+id="loadingBackground"
+src="loading.jpg">
+
+<div id="loadingBox">
+
+<p id="loadingText">
+
+RESOURCE LOADING...
+PLEASE WAIT
+
+</p>
+
+<div id="loadingBar">
+
+<div id="loadingProgress"></div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Tap To Start -->
+
+<section id="tapScreen" class="screen">
+
+<button id="tapButton">
+
+TAP TO START
+
+</button>
+
+</section>
+
+<!-- Story -->
+
+<section id="storyScreen" class="screen">
+
+<video
+id="storyVideo"
+playsinline
+webkit-playsinline
+preload="auto">
+
+<source src="story.mp4" type="video/mp4">
+
+</video>
+
+</section>
+
+<!-- Game -->
+
+<section id="gameScreen" class="screen">
+
+<h1>GAME STARTS HERE</h1>
+
+</section>
+
+<!-- Music -->
+
+<audio
+id="bgMusic"
+preload="auto">
+
+<source
+src="music.mp3"
+type="audio/mpeg">
+
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
